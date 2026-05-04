@@ -7,7 +7,7 @@ agent any
                     $class: 'GitSCM',
                     branches: [[name: '*/main']],
                     userRemoteConfigs: [[
-                        url: 'https://gitlab.example.com/group/repo.git',
+                        url: 'https://github.com/AveOtium/jenkins_test',
                         name: 'origin'
                     ]]
                 ])
