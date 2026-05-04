@@ -20,7 +20,7 @@ agent any
         }
         stage('Test') {
             steps {
-                bat 'pytest'
+                bat 'C:\\Users\\ilay2\\AppData\\Local\\Programs\\Python\\Python313\\python -m pytest'
             }
         }
     }
