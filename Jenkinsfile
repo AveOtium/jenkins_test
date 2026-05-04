@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git url:'https://github.com/AveOtium/jenkins_test', branch: 'main'
+                git url:'<URL>', branch: 'main'
             }
         }
         stage('Install') {
