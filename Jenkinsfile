@@ -15,7 +15,7 @@ agent any
         }
         stage('Install') {
             steps {
-                bat 'C:\\Users\\ilay2\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\python.exe -m pip install -r requirements.txt'
+                bat 'pip install -r requirements.txt'
             }
         }
         stage('Test') {
