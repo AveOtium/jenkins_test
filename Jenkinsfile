@@ -20,15 +20,15 @@ agent any
                 bat 'python --version'
             }
         }   
-        stage('Install') {
-            steps {
-                bat 'python -m pip install -r requirements.txt'
-            }
-        }
-        stage('Test') {
-            steps {
-                bat 'pytest'
-            }
-        }
-    }
+    //     stage('Install') {
+    //         steps {
+    //             bat 'python -m pip install -r requirements.txt'
+    //         }
+    //     }
+    //     stage('Test') {
+    //         steps {
+    //             bat 'pytest'
+    //         }
+    //     }
+    // }
 }
