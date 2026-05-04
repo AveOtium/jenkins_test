@@ -19,7 +19,7 @@ agent any
                 bat 'py --version'
                 bat 'python --version'
             }
-        }   
+        }
     //     stage('Install') {
     //         steps {
     //             bat 'python -m pip install -r requirements.txt'
@@ -30,5 +30,5 @@ agent any
     //             bat 'pytest'
     //         }
     //     }
-    // }
+    }
 }
