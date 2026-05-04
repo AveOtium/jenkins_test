@@ -17,7 +17,7 @@ agent any
             steps {
                 bat 'where python'
                 bat 'py --version'
-                bat 'python --version'
+                //bat 'python --version'
             }
         }
     //     stage('Install') {
