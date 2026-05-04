@@ -13,6 +13,13 @@ agent any
                 ])
             }
         }
+        stage('Debug') {
+            steps {
+                bat 'where python'
+                bat 'py --version'
+                bat 'python --version'
+            }
+        }   
         stage('Install') {
             steps {
                 bat 'python -m pip install -r requirements.txt'
