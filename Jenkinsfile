@@ -16,7 +16,7 @@ agent any
         stage('Debug') {
             steps {
                 bat 'where python'
-                bat 'py --version'
+                bat 'C:\\Users\\ilay2\\AppData\\Local\\Microsoft\\WindowsApps\\python3.exe --version'
                 //bat 'python --version'
             }
         }
