@@ -15,7 +15,7 @@ agent any
         }
         stage('Install') {
             steps {
-                bat 'C:\Users\ilay2\AppData\Local\Microsoft\WindowsApps\python -m pip install -r requirements.txt'
+                bat 'C:\\Users\\ilay2\\AppData\\Local\\Microsoft\\WindowsApps\\python -m pip install -r requirements.txt'
             }
         }
         stage('Test') {
