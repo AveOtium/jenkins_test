@@ -13,21 +13,15 @@ agent any
                 ])
             }
         }
-        stage('Debug') {
+        stage('Install') {
             steps {
-                bat 'C:\\Users\\ilay2\\AppData\\Local\\Programs\\Python\\Python313\\python --version'
-                //bat 'python --version'
+                bat 'C:\\Users\\ilay2\\AppData\\Local\\Programs\\Python\\Python313\\python -m pip install -r requirements.txt'
             }
         }
-    //     stage('Install') {
-    //         steps {
-    //             bat 'python -m pip install -r requirements.txt'
-    //         }
-    //     }
-    //     stage('Test') {
-    //         steps {
-    //             bat 'pytest'
-    //         }
-    //     }
+        stage('Test') {
+            steps {
+                bat 'pytest'
+            }
+        }
     }
 }
