@@ -1,18 +1,6 @@
 pipeline {
 agent any
     stages {
-        // stage('Checkout') {
-        //     steps {
-        //         checkout([
-        //             $class: 'GitSCM',
-        //             branches: [[name: '*/main']],
-        //             userRemoteConfigs: [[
-        //                 url: 'https://github.com/AveOtium/jenkins_test',
-        //                 name: 'origin'
-        //             ]]
-        //         ])
-        //     }
-        // }
         stage('Checkout') {
             steps {
                 git url:'https://github.com/AveOtium/jenkins_test', branch: 'main'
